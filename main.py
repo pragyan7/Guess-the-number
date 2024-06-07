@@ -1,4 +1,5 @@
 import random
+import sys
 from art import logo
 
 EASY_LEVEL_TURNS = 10
@@ -27,7 +28,7 @@ def set_difficulty():
     return HARD_LEVEL_TURNS
   else:
     print("Please provide a valid input")
-    return
+    sys.exit()
 
 def guessing_game():
   print(logo)
