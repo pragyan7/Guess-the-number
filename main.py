@@ -16,7 +16,7 @@ def check_guess(user_guess, the_number, turns):
     return turns - 1
   else:
     # If they got the answer correct, show the actual answer to the player.
-    print(f"You got it! The answer is {the_number}! You win! 🤩")
+    print(f".................................\n  You got it! The answer is {the_number}!\n  You win! 🤩\n.................................")
 
 def set_difficulty():
   '''Sets the difficulty level of the game'''
@@ -34,9 +34,7 @@ def guessing_game():
   print("Welcome to the Number Guessing Game!\nI'm thinking of a number between 1 to 100.")
   # Choosing a random number between 1 and 100.
   the_number = random.randint(1, 100)
-
   turns = set_difficulty()
-  
   # Repeat the guessing functionality if the user gets it wrong.
   user_guess = 0
   while user_guess != the_number:
